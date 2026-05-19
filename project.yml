@@ -11,6 +11,7 @@ targets:
   SwiftUITaskDemo:
     type: application
     platform: macOS
+    productName: SwiftUITaskDemo
     sources:
       - Sources
     settings:
@@ -21,3 +22,10 @@ targets:
         CODE_SIGN_STYLE: Manual
         DEVELOPMENT_TEAM: ""
         ENABLE_HARDENED_RUNTIME: NO
+schemes:
+  SwiftUITaskDemo:
+    build:
+      targets:
+        SwiftUITaskDemo: all
+    run:
+      config: Debug
